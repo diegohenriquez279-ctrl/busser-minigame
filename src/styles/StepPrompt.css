@@ -1,0 +1,56 @@
+.prompt {
+  flex-shrink: 0;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  box-shadow: 0 1px 3px rgba(28, 36, 48, 0.06);
+}
+
+.prompt__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.prompt__step {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.prompt__dots {
+  display: flex;
+  gap: 4px;
+  margin: 5px 0 6px;
+}
+
+.prompt__dot {
+  flex: 1;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--line);
+}
+
+.prompt__dot.done { background: var(--ok); }
+.prompt__dot.current { background: var(--ink); }
+
+.prompt__title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.28;
+}
+
+.prompt__hint {
+  margin: 3px 0 0;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.prompt__progress {
+  margin: 3px 0 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}

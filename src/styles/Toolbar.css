@@ -1,0 +1,68 @@
+.toolbar {
+  flex-shrink: 0;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 6px 8px 8px;
+  box-shadow: 0 -1px 3px rgba(28, 36, 48, 0.06);
+}
+
+.toolbar__status {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  text-align: center;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toolbar__status b {
+  color: var(--ink);
+}
+
+.toolbar__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.tool {
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 2px;
+  border-radius: 12px;
+  border: 2.5px solid transparent;
+  background: var(--bg);
+}
+
+.tool__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.tool__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tool__label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.tool--selected {
+  border-color: var(--select);
+  background: var(--select-bg);
+  box-shadow: 0 0 0 2px var(--select-bg);
+}
+
+.tool--selected .tool__icon {
+  transform: scale(1.1);
+}

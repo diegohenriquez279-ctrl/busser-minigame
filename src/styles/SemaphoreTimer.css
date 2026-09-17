@@ -1,0 +1,74 @@
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 6px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+}
+
+.timer__lights {
+  display: flex;
+  gap: 3px;
+  padding: 3px 4px;
+  border-radius: 999px;
+  background: #0006;
+}
+
+.timer__light {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  opacity: 0.22;
+}
+
+.timer__light--green { background: var(--light-green); }
+.timer__light--yellow { background: var(--light-yellow); }
+.timer__light--red { background: var(--light-red); }
+
+.timer__light.is-on {
+  opacity: 1;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.timer__light--green.is-on { color: var(--light-green); }
+.timer__light--yellow.is-on { color: var(--light-yellow); }
+.timer__light--red.is-on { color: var(--light-red); }
+
+.timer__readout {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  min-width: 44px;
+}
+
+.timer__time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.timer__bar {
+  height: 3px;
+  border-radius: 2px;
+  background: #fff3;
+  overflow: hidden;
+}
+
+.timer__fill {
+  display: block;
+  height: 100%;
+  transition: width 0.1s linear;
+}
+
+.timer--green .timer__fill { background: var(--light-green); }
+.timer--yellow .timer__fill { background: var(--light-yellow); }
+.timer--red .timer__fill { background: var(--light-red); }
+
+.timer--red .timer__time {
+  color: #ffc9c9;
+}

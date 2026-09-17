@@ -1,0 +1,93 @@
+.start {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.start__card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 28px 20px 22px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(28, 36, 48, 0.08);
+}
+
+.start__icons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.start__icons svg {
+  width: 44px;
+  height: 44px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: var(--info-bg);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.start__title {
+  margin: 8px 0 4px;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.start__goal {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.start__rules {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 14px;
+  text-align: left;
+  background: var(--bg);
+  border-radius: 12px;
+  display: grid;
+  gap: 8px;
+  font-size: 0.92rem;
+}
+
+.start__rules li {
+  padding-left: 18px;
+  position: relative;
+}
+
+.start__rules li::before {
+  content: '•';
+  position: absolute;
+  left: 4px;
+  color: var(--muted);
+}
+
+.swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  vertical-align: -1px;
+  border: 1.5px solid #0004;
+}
+
+.swatch--white { background: #fff; }
+.swatch--green { background: #2f9e44; }
+.swatch--blue { background: #1c7ed6; }
+
+.start__cta {
+  width: 100%;
+}
